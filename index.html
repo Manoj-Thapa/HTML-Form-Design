@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="style.css">
+      <title>HTML Form Design</title>
+   </head>
+   <body>
+      <div class="grid-container">
+         <div class="box" id="box1">
+            <p>Form Submission</p>
+            <!-- HTML Form -->
+            <form action="" id="submit-form">
+               <label for="fname">* First Name:</label><br>
+               <input type="text" class="form-control" name="fname" id="fname" placeholder="First Name" autofocus="autofocus">
+               <span class="invalid-message"></span><br>
+               <label for="lname">* Last Name:</label><br>
+               <input type="text" class="form-control" name="lname" id="lname" placeholder="Last Name" autofocus="autofocus">
+               <span class="invalid-message"></span><br>
+               <label for="address_one">* Address Line 1:</label><br>
+               <input type="text" class="form-control" name="address_one" id="address_one" placeholder="Address Line 1" autofocus="autofocus">
+               <span class="invalid-message"></span><br>
+               <label for="address_two">Address Line 2:</label><br>
+               <input type="text" class="form-control" name="address_two" id="address_two" placeholder="Address Line 2" autofocus="autofocus">
+               <span class="invalid-message"></span><br>
+               <label for="pin">* PIN:</label><br>
+               <input type="number" class="form-control" name="pin" id="pin" placeholder="PIN" autofocus="autofocus">
+               <span class="invalid-message"></span><br>
+               <label for="gender">* Gender:</label><br>
+               <input type="radio" name="gender" id="male" value="Male"> Male
+               <input type="radio" name="gender" id="female" value="Female"> female
+               <span class="invalid-message"></span><br>
+               <label for="food">* Choice of Food: <i>(must choose at least 2 out of 5 options)</i> </label><br>
+               <input type="checkbox" name="type_one" id="north" value="NorthIndian"> North Indian<br>
+               <input type="checkbox" name="type_two" id="south" value="SouthIndian"> South Indian<br>
+               <input type="checkbox" name="type_three" id="chinese" value="Chinese"> Chinense<br>
+               <input type="checkbox" name="type_four" id="japanese" value="Japanese"> Japanese<br>
+               <input type="checkbox" name="type_five" id="sea" value="SeaFood"> Sea Food
+               <span class="invalid-message"></span><br>
+               <label for="state">* State:</label><br>
+               <input type="text" class="form-control" name="state" id="state" placeholder="State" autofocus="autofocus">
+               <span class="invalid-message"></span><br>
+               <label for="country">* Country:</label><br>
+               <input type="text" class="form-control" name="country" id="country" placeholder="Country" autofocus="autofocus">
+               <span class="invalid-message"></span><br>
+               <input type="submit" value="Submit">
+            </form>
+         </div>
+         <div class="box" id="box2">
+            <p>Temporary Database</p>
+            <!-- Table -->
+            <div class="wrap-table">
+               <table class="table-design">
+                  <thead>
+                     <tr>
+                        <td>First Name</td>
+                        <td>Last Name</td>
+                        <td>Address</td>
+                        <td>Pincode</td>
+                        <td>Gender</td>
+                        <td>Food</td>
+                        <td>State</td>
+                        <td>Country</td>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <!-- Creating HTML Element by using DOM -->
+                  </tbody>
+               </table>
+            </div>
+         </div>
+      </div>
+      <script src="script.js"></script>
+   </body>
+</html>
